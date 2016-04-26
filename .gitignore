@@ -1,0 +1,16 @@
+# object file
+.o
+
+#llvm (too big)
+llvm/
+build/
+
+#kastors
+kastors-1.1/
+
+#plasma
+plasma-installer_2.8.0/
+
+#binaries
+cholesky/bin/
+openmp/bin/

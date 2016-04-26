@@ -1,0 +1,18 @@
+./example: Interrompre
+
+ Performance counter stats for './example':
+
+      30395,096379      task-clock (msec)         #    1,990 CPUs utilized          
+             1 080      context-switches          #    0,036 K/sec                  
+                28      cpu-migrations            #    0,001 K/sec                  
+                95      page-faults               #    0,003 K/sec                  
+    72 594 646 231      cycles                    #    2,388 GHz                    
+    46 451 305 521      stalled-cycles-frontend   #   63,99% frontend cycles idle   
+   <not supported>      stalled-cycles-backend   
+    61 727 360 490      instructions              #    0,85  insns per cycle        
+                                                  #    0,75  stalled cycles per insn
+    11 134 098 609      branches                  #  366,312 M/sec                  
+         6 618 785      branch-misses             #    0,06% of all branches        
+
+      15,273969157 seconds time elapsed
+
