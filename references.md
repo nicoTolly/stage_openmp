@@ -27,3 +27,6 @@ la doc de gcc pour libgomp ( utile pour comparer )
 
 http://llvm.org/docs/LangRef.html
 la doc de la llvm intermediate representation
+
+http://reviews.llvm.org/D13991
+le commit lié à l'utilisation de hwloc

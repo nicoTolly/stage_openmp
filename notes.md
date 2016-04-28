@@ -1,5 +1,6 @@
 #Notes sur OpenMP et l'algorithme de Cholesky
 
+
 trouvé d'abord une implémentation de Cholesky en C standard,
 celle-ci fonctionne aussi bien avec clang qu'avec gcc.
 
@@ -506,21 +507,153 @@ entry:
 
 ##libgomp and libomp
 
-Le runtime de gcc N'EST PAS compatible avec un programme compilé avec
-clang.
+Le runtime de gcc N'EST PAS compatible avec un programme 
+compilé avec clang.
 
-La raison est sans doute que les fonctions appelées sont différentes 
-( les kmp... pour clang et GOMP... pour gcc ). On peut supposer que des
-indirections permettent au runtime de clang de rediriger les appels à GOMP
-vers des fonctions kmp, ce qui permet d'utiliser le runtime de clang avec
-des fonctions compilées avec gcc.
+La raison est sans doute que les fonctions appelées sont 
+différentes ( les kmp... pour clang et GOMP... pour gcc ). On
+peut supposer que des indirections permettent au runtime de clang
+de rediriger les appels à GOMP vers des fonctions kmp, ce qui 
+permet d'utiliser le runtime de clang avec des fonctions compilées
+avec gcc.
 
-Pour la compatibilité gcc -> libomp, les symboles sont définies dans 
-kmp_ftn_os.h et le lien vers les fonctions kmp est fait dans kmp_gsupport.c.
+Pour la compatibilité gcc -> libomp, les symboles sont définies 
+dans kmp_ftn_os.h et le lien vers les fonctions kmp est fait 
+dans kmp_gsupport.c.
 Toujours bon à savoir
 
-Fonction utile : nm permet de lister tous les symboles définis dans un 
-fichier binaires exécutable. Permet de savoir quelle fonction on appelle.
+Fonction utile : nm permet de lister tous les symboles définis 
+dans un fichier binaires exécutable. Permet de savoir quelle 
+fonction on appelle.
 
-Petite note : sleep caste automatiquement son argument en int, il serait
-bon d'y faire quelque chose
+Petite note : sleep caste automatiquement son argument en int, 
+il serait bon d'y faire quelque chose
+
+
+#26/04
+
+Après beaucoup trop de recherche, trouvé la définition de 
+kmp_fork_call dans kmp_runtime.c
+
+kmp.h l2296, la structure qui definit les infos sur un thread
+
+
+27/04
+
+Pour la definition de tâches :
+
+kmpc_alloc_task est la première fonction appelée.
+
+Elle appelle elle-même kmp_alloc_task ( les fonctions kmp sont
+internes au runtime, kmpc sont externes ) qui alloue une structure
+de taille suffisante en fonction des variables qui seront accédées.
+
+On trouve un kmp_alloc_task_deque... Voir ce que c'est.
+
+```
+//------------------------------------------------------------------------------
+// __kmp_alloc_task_deque:
+// Allocates a task deque for a particular thread, and initialize the necessary
+// data structures relating to the deque.  This only happens once per thread
+// per task team since task teams are recycled.
+// No lock is needed during allocation since each thread allocates its own
+// deque.
+```
+
+Commentaires de kmp_alloc_task_deque
+
+kmp_alloc est un wrapper de malloc qui prend en plus en compte l'alignement
+Utilisé pour toutes les allocations.
+
+Structure intéressante : kmp_thread_data_t, l2234 de kmp.h, définit
+toutes les infos relatives au thread.
+
+```
+// Data for task team but per thread
+typedef struct kmp_base_thread_data {
+    kmp_info_p *            td_thr;                // Pointer back to thread info
+                                                   // Used only in __kmp_execute_tasks_template, maybe not avail until task is queued?
+    kmp_bootstrap_lock_t    td_deque_lock;         // Lock for accessing deque
+    kmp_taskdata_t **       td_deque;              // Deque of tasks encountered by td_thr, dynamically allocated
+    kmp_uint32              td_deque_head;         // Head of deque (will wrap)
+    kmp_uint32              td_deque_tail;         // Tail of deque (will wrap)
+    kmp_int32               td_deque_ntasks;       // Number of tasks in deque
+                                                   // GEH: shouldn't this be volatile since used in while-spin?
+    kmp_int32               td_deque_last_stolen;  // Thread number of last successful steal
+#ifdef BUILD_TIED_TASK_STACK
+    kmp_task_stack_t        td_susp_tied_tasks;    // Stack of suspended tied tasks for task scheduling constraint
+#endif // BUILD_TIED_TASK_STACK
+} kmp_base_thread_data_t;
+
+typedef union KMP_ALIGN_CACHE kmp_thread_data {
+    kmp_base_thread_data_t  td;
+    double                  td_align;       /* use worst case alignment */
+    char                    td_pad[ KMP_PAD(kmp_base_thread_data_t, CACHE_LINE) ];
+} kmp_thread_data_t;
+
+```
+Des trucs qui seront utiles par la suite :
+```
+
+typedef hwloc_cpuset_t kmp_affin_mask_t;
+# define KMP_CPU_SET(i,mask)       hwloc_bitmap_set((hwloc_cpuset_t)mask, (unsigned)i)
+# define KMP_CPU_ISSET(i,mask)     hwloc_bitmap_isset((hwloc_cpuset_t)mask, (unsigned)i)
+# define KMP_CPU_CLR(i,mask)       hwloc_bitmap_clr((hwloc_cpuset_t)mask, (unsigned)i)
+# define KMP_CPU_ZERO(mask)        hwloc_bitmap_zero((hwloc_cpuset_t)mask)
+```
+
+KMP_CPU_SET est appelé dans kmp_balanced_affinity. Il permet de configurer
+l'affinité des threads sur les coeurs ( je pense )
+fonction défini à la ligne 4505 de kmp_affinity.cpp
+
+Elle équilibre la charge de travail entre les différents coeurs, en tenant
+notamment compte des disparités d'architecture.
+
+Plusieurs cas sont envisagés, un cas d'architecture uniforme, un autre
+pour architectures non uniformes ( les structures qui gèrent les deux
+cas sont différentes ), si le nombre de threads à répartir est inférieur
+ou supérieur au nombre de coeurs.
+
+kmp_balanced_affinity est appelé dans kmp_fork_barrier
+
+```
+enum affinity_type {
+    affinity_none = 0,
+    affinity_physical,
+    affinity_logical,
+    affinity_compact,
+    affinity_scatter,
+    affinity_explicit,
+    affinity_balanced,
+    affinity_disabled,  // not used outsize the env var parser
+    affinity_default
+};
+
+enum affinity_gran {
+    affinity_gran_fine = 0,
+    affinity_gran_thread,
+    affinity_gran_core,
+    affinity_gran_package,
+    affinity_gran_node,
+#if KMP_GROUP_AFFINITY
+    //
+    // The "group" granularity isn't necesssarily coarser than all of the
+    // other levels, but we put it last in the enum.
+    //
+    affinity_gran_group,
+#endif /* KMP_GROUP_AFFINITY */
+    affinity_gran_default
+};
+```
+les possibilités de configuration pour l'affinité. kmp_balanced_affinity
+est utilisée pour le cas affinity_balanced, sans trop de surprise.
+
+kmp_fork_barrier est appelée notamment à la fin de kmp_internal_fork.
+Ça correspond à la spec qui dit qu'une barrière implicite est placée
+en début d'une région parallèle ( mais aussi à la fin )
+
+
+Il est possible de compiler libomp de manière à utiliser hwloc plutôt
+que leurs built-in fonctions qui ont l'air assez compliquée. 
+Peut-être envisager de recompiler ma version si cela peut rendre les
+choses plus simples.

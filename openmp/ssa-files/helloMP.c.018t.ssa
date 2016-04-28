@@ -1,0 +1,68 @@
+
+;; Function main._omp_fn.0 (main._omp_fn.0, funcdef_no=3, decl_uid=2913, cgraph_uid=3, symbol_order=3)
+
+main._omp_fn.0 (struct .omp_data_s.0 & restrict .omp_data_i)
+{
+  int shared [value-expr: .omp_data_i->shared];
+  int D.2930;
+  int D.2929;
+  int tid;
+  int fpriv;
+  int _8;
+  int _9;
+
+  <bb 8>:
+
+  <bb 3>:
+  fpriv_4 = .omp_data_i_3(D)->fpriv;
+  tid_6 = omp_get_thread_num ();
+  printf ("hello from thread %d\n", tid_6);
+  _8 = .omp_data_i_3(D)->shared;
+  _9 = _8 + 1;
+  .omp_data_i_3(D)->shared = _9;
+  fpriv_11 = fpriv_4 + 1;
+  if (tid_6 == 0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 5>:
+  return;
+
+  <bb 4>:
+  printf ("Hello World \n");
+  goto <bb 5>;
+
+}
+
+
+
+;; Function main (main, funcdef_no=2, decl_uid=2903, cgraph_uid=2, symbol_order=2)
+
+main ()
+{
+  int fpriv;
+  int shared;
+  int tid;
+  int D.2911;
+  struct .omp_data_s.0 .omp_data_o.1;
+  int D.2923;
+  int D.2924;
+  int _9;
+
+  <bb 2>:
+  shared_1 = 10;
+  fpriv_2 = 14;
+  .omp_data_o.1.fpriv = fpriv_2;
+  .omp_data_o.1.shared = shared_1;
+  __builtin_GOMP_parallel (main._omp_fn.0, &.omp_data_o.1, 0, 0);
+  shared_7 = .omp_data_o.1.shared;
+  .omp_data_o.1 ={v} {CLOBBER};
+  _9 = 0;
+
+<L2>:
+  return _9;
+
+}
+
+

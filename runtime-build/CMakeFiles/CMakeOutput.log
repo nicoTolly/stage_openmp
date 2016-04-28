@@ -1,0 +1,1004 @@
+The system is: Linux - 4.2.0-25-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/nico/stage/runtime-build/CMakeFiles/3.2.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/nico/stage/runtime-build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec963073955/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec963073955.dir/build.make CMakeFiles/cmTryCompileExec963073955.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec963073955.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec963073955.dir/testCCompiler.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec963073955
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec963073955.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec963073955.dir/testCCompiler.c.o  -o cmTryCompileExec963073955 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3358259139/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3358259139.dir/build.make CMakeFiles/cmTryCompileExec3358259139.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3358259139
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3358259139.dir/link.txt --verbose=1
+/usr/bin/gcc      -v CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3358259139 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3358259139' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFIaYcw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3358259139 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3358259139/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3358259139.dir/build.make CMakeFiles/cmTryCompileExec3358259139.dir/build]
+  ignore line: [make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3358259139]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3358259139.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -v CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3358259139 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3358259139' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFIaYcw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3358259139 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccFIaYcw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3358259139] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTryCompileExec3358259139.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1051468555/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1051468555.dir/build.make CMakeFiles/cmTryCompileExec1051468555.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1051468555.dir/feature_tests.c.o
+/usr/bin/gcc   -std=c11 -o CMakeFiles/cmTryCompileExec1051468555.dir/feature_tests.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1051468555
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1051468555.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec1051468555.dir/feature_tests.c.o  -o cmTryCompileExec1051468555 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2776251014/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2776251014.dir/build.make CMakeFiles/cmTryCompileExec2776251014.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2776251014.dir/feature_tests.c.o
+/usr/bin/gcc   -std=c99 -o CMakeFiles/cmTryCompileExec2776251014.dir/feature_tests.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2776251014
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2776251014.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec2776251014.dir/feature_tests.c.o  -o cmTryCompileExec2776251014 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2704310689/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2704310689.dir/build.make CMakeFiles/cmTryCompileExec2704310689.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2704310689.dir/feature_tests.c.o
+/usr/bin/gcc   -std=c90 -o CMakeFiles/cmTryCompileExec2704310689.dir/feature_tests.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2704310689
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2704310689.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec2704310689.dir/feature_tests.c.o  -o cmTryCompileExec2704310689 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3175317242/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3175317242.dir/build.make CMakeFiles/cmTryCompileExec3175317242.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3175317242.dir/testCXXCompiler.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec3175317242.dir/testCXXCompiler.cxx.o -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3175317242
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3175317242.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec3175317242.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3175317242 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3459161836/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3459161836.dir/build.make CMakeFiles/cmTryCompileExec3459161836.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3459161836
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3459161836.dir/link.txt --verbose=1
+/usr/bin/g++       -v CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3459161836 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3459161836' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cccJPPl1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3459161836 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3459161836/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3459161836.dir/build.make CMakeFiles/cmTryCompileExec3459161836.dir/build]
+  ignore line: [make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++     -o CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3459161836]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3459161836.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++       -v CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3459161836 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3459161836' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cccJPPl1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3459161836 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cccJPPl1.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3459161836] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTryCompileExec3459161836.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2822443513/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2822443513.dir/build.make CMakeFiles/cmTryCompileExec2822443513.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2822443513.dir/feature_tests.cxx.o
+/usr/bin/g++    -std=c++14 -o CMakeFiles/cmTryCompileExec2822443513.dir/feature_tests.cxx.o -c /home/nico/stage/runtime-build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2822443513
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2822443513.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec2822443513.dir/feature_tests.cxx.o  -o cmTryCompileExec2822443513 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4156571684/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4156571684.dir/build.make CMakeFiles/cmTryCompileExec4156571684.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4156571684.dir/feature_tests.cxx.o
+/usr/bin/g++    -std=c++11 -o CMakeFiles/cmTryCompileExec4156571684.dir/feature_tests.cxx.o -c /home/nico/stage/runtime-build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec4156571684
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4156571684.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec4156571684.dir/feature_tests.cxx.o  -o cmTryCompileExec4156571684 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4035317358/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4035317358.dir/build.make CMakeFiles/cmTryCompileExec4035317358.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4035317358.dir/feature_tests.cxx.o
+/usr/bin/g++    -std=c++98 -o CMakeFiles/cmTryCompileExec4035317358.dir/feature_tests.cxx.o -c /home/nico/stage/runtime-build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec4035317358
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4035317358.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec4035317358.dir/feature_tests.cxx.o  -o cmTryCompileExec4035317358 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C++ SOURCE FILE Test LIBOMP_HAVE_STD_CPP11_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec90988164/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec90988164.dir/build.make CMakeFiles/cmTryCompileExec90988164.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec90988164.dir/src.cxx.o
+/usr/bin/g++    -DLIBOMP_HAVE_STD_CPP11_FLAG   -std=c++11 -o CMakeFiles/cmTryCompileExec90988164.dir/src.cxx.o -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec90988164
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec90988164.dir/link.txt --verbose=1
+/usr/bin/g++    -DLIBOMP_HAVE_STD_CPP11_FLAG    CMakeFiles/cmTryCompileExec90988164.dir/src.cxx.o  -o cmTryCompileExec90988164 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3572997698/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3572997698.dir/build.make CMakeFiles/cmTryCompileExec3572997698.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3572997698.dir/src.cxx.o
+/usr/bin/g++    -DLIBOMP_HAVE_FNO_EXCEPTIONS_FLAG   -fno-exceptions -o CMakeFiles/cmTryCompileExec3572997698.dir/src.cxx.o -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3572997698
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3572997698.dir/link.txt --verbose=1
+/usr/bin/g++    -DLIBOMP_HAVE_FNO_EXCEPTIONS_FLAG    CMakeFiles/cmTryCompileExec3572997698.dir/src.cxx.o  -o cmTryCompileExec3572997698 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_X_CPP_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec976170844/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec976170844.dir/build.make CMakeFiles/cmTryCompileExec976170844.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec976170844.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_X_CPP_FLAG   -x c++ -o CMakeFiles/cmTryCompileExec976170844.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec976170844
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec976170844.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_X_CPP_FLAG    CMakeFiles/cmTryCompileExec976170844.dir/src.c.o  -o cmTryCompileExec976170844 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WERROR_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3126506582/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3126506582.dir/build.make CMakeFiles/cmTryCompileExec3126506582.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3126506582.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WERROR_FLAG   -Werror -o CMakeFiles/cmTryCompileExec3126506582.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3126506582
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3126506582.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WERROR_FLAG    CMakeFiles/cmTryCompileExec3126506582.dir/src.c.o  -o cmTryCompileExec3126506582 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3438830166/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3438830166.dir/build.make CMakeFiles/cmTryCompileExec3438830166.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3438830166.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG   -Wunused-function -o CMakeFiles/cmTryCompileExec3438830166.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3438830166
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3438830166.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG    CMakeFiles/cmTryCompileExec3438830166.dir/src.c.o  -o cmTryCompileExec3438830166 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3986703948/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3986703948.dir/build.make CMakeFiles/cmTryCompileExec3986703948.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3986703948.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG   -Wunused-value -o CMakeFiles/cmTryCompileExec3986703948.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3986703948
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3986703948.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG    CMakeFiles/cmTryCompileExec3986703948.dir/src.c.o  -o cmTryCompileExec3986703948 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2728538867/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2728538867.dir/build.make CMakeFiles/cmTryCompileExec2728538867.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2728538867.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG   -Wunused-variable -o CMakeFiles/cmTryCompileExec2728538867.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2728538867
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2728538867.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG    CMakeFiles/cmTryCompileExec2728538867.dir/src.c.o  -o cmTryCompileExec2728538867 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_SWITCH_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1794753893/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1794753893.dir/build.make CMakeFiles/cmTryCompileExec1794753893.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1794753893.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_SWITCH_FLAG   -Wswitch -o CMakeFiles/cmTryCompileExec1794753893.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1794753893
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1794753893.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_SWITCH_FLAG    CMakeFiles/cmTryCompileExec1794753893.dir/src.c.o  -o cmTryCompileExec1794753893 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2928990926/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2928990926.dir/build.make CMakeFiles/cmTryCompileExec2928990926.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2928990926.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG   -Wsign-compare -o CMakeFiles/cmTryCompileExec2928990926.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2928990926
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2928990926.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG    CMakeFiles/cmTryCompileExec2928990926.dir/src.c.o  -o cmTryCompileExec2928990926 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1495052662/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1495052662.dir/build.make CMakeFiles/cmTryCompileExec1495052662.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1495052662.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG   -Wunknown-pragmas -o CMakeFiles/cmTryCompileExec1495052662.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1495052662
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1495052662.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG    CMakeFiles/cmTryCompileExec1495052662.dir/src.c.o  -o cmTryCompileExec1495052662 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2272285029/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2272285029.dir/build.make CMakeFiles/cmTryCompileExec2272285029.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2272285029.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG   -Wmissing-field-initializers -o CMakeFiles/cmTryCompileExec2272285029.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2272285029
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2272285029.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG    CMakeFiles/cmTryCompileExec2272285029.dir/src.c.o  -o cmTryCompileExec2272285029 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_MISSING_BRACES_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec690076249/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec690076249.dir/build.make CMakeFiles/cmTryCompileExec690076249.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec690076249.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_MISSING_BRACES_FLAG   -Wmissing-braces -o CMakeFiles/cmTryCompileExec690076249.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec690076249
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec690076249.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_MISSING_BRACES_FLAG    CMakeFiles/cmTryCompileExec690076249.dir/src.c.o  -o cmTryCompileExec690076249 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_COMMENT_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec356321931/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec356321931.dir/build.make CMakeFiles/cmTryCompileExec356321931.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec356321931.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_COMMENT_FLAG   -Wcomment -o CMakeFiles/cmTryCompileExec356321931.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec356321931
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec356321931.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WNO_COMMENT_FLAG    CMakeFiles/cmTryCompileExec356321931.dir/src.c.o  -o cmTryCompileExec356321931 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_MSSE2_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4024138843/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4024138843.dir/build.make CMakeFiles/cmTryCompileExec4024138843.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4024138843.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_MSSE2_FLAG   -msse2 -o CMakeFiles/cmTryCompileExec4024138843.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4024138843
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4024138843.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_MSSE2_FLAG    CMakeFiles/cmTryCompileExec4024138843.dir/src.c.o  -o cmTryCompileExec4024138843 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_FTLS_MODEL_FLAG succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec72449313/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec72449313.dir/build.make CMakeFiles/cmTryCompileExec72449313.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec72449313.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_FTLS_MODEL_FLAG   -ftls-model=initial-exec -o CMakeFiles/cmTryCompileExec72449313.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec72449313
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec72449313.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_FTLS_MODEL_FLAG    CMakeFiles/cmTryCompileExec72449313.dir/src.c.o  -o cmTryCompileExec72449313 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C Linker Flag test LIBOMP_HAVE_X_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_AS_NEEDED_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_VERSION_SCRIPT_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_STATIC_LIBGCC_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_FINI_FLAG succeeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build
+
+Run Build Command:"/usr/bin/make"
+Scanning dependencies of target foo
+[100%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+Linking C shared library libfoo.so
+[100%] Built target foo
+
+Source file was:
+int foo(int a) { return a*a; }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2957646419/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2957646419.dir/build.make CMakeFiles/cmTryCompileExec2957646419.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2957646419.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2957646419.dir/CheckIncludeFiles.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2957646419
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2957646419.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec2957646419.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2957646419 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3425655192/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3425655192.dir/build.make CMakeFiles/cmTryCompileExec3425655192.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3425655192.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3425655192.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3425655192
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3425655192.dir/link.txt --verbose=1
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3425655192.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3425655192 -rdynamic -lpthread 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test LIBOMP_HAVE_VERSION_SYMBOLS succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2519994831/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2519994831.dir/build.make CMakeFiles/cmTryCompileExec2519994831.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2519994831.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_VERSION_SYMBOLS -Wl,--version-script=/home/nico/stage/runtime-build/runtime/__version_script.txt   -o CMakeFiles/cmTryCompileExec2519994831.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2519994831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2519994831.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_VERSION_SYMBOLS -Wl,--version-script=/home/nico/stage/runtime-build/runtime/__version_script.txt    CMakeFiles/cmTryCompileExec2519994831.dir/src.c.o  -o cmTryCompileExec2519994831 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <stdio.h>
+    void func1() { printf("Hello"); }
+    void func2() { printf("World"); }
+    __asm__(".symver func1, func@VER1");
+    __asm__(".symver func2, func@VER2");
+    int main() {
+      func1();
+      func2();
+      return 0;
+    }
+Performing C SOURCE FILE Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3187169019/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3187169019.dir/build.make CMakeFiles/cmTryCompileExec3187169019.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3187169019.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE___BUILTIN_FRAME_ADDRESS   -o CMakeFiles/cmTryCompileExec3187169019.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3187169019
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3187169019.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE___BUILTIN_FRAME_ADDRESS    CMakeFiles/cmTryCompileExec3187169019.dir/src.c.o  -o cmTryCompileExec3187169019 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(int argc, char** argv) {
+  void* p = __builtin_frame_address(0);
+  return 0;}
+Performing C SOURCE FILE Test LIBOMP_HAVE_WEAK_ATTRIBUTE succeded with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1926922690/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1926922690.dir/build.make CMakeFiles/cmTryCompileExec1926922690.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1926922690.dir/src.c.o
+/usr/bin/gcc   -DLIBOMP_HAVE_WEAK_ATTRIBUTE   -o CMakeFiles/cmTryCompileExec1926922690.dir/src.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1926922690
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1926922690.dir/link.txt --verbose=1
+/usr/bin/gcc   -DLIBOMP_HAVE_WEAK_ATTRIBUTE    CMakeFiles/cmTryCompileExec1926922690.dir/src.c.o  -o cmTryCompileExec1926922690 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+__attribute__ ((weak)) int foo(int a) { return a*a; }
+  int main(int argc, char** argv) {
+  return foo(argc);}
+Determining if the include file hwloc.h exists passed with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3322397020/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3322397020.dir/build.make CMakeFiles/cmTryCompileExec3322397020.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3322397020.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -I/usr/local/include    -o CMakeFiles/cmTryCompileExec3322397020.dir/CheckIncludeFile.c.o   -c /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3322397020
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3322397020.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec3322397020.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3322397020 -rdynamic 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function hwloc_topology_init exists in the hwloc passed with the following output:
+Change Dir: /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1622324760/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1622324760.dir/build.make CMakeFiles/cmTryCompileExec1622324760.dir/build
+make[1]: Entering directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nico/stage/runtime-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1622324760.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=hwloc_topology_init   -o CMakeFiles/cmTryCompileExec1622324760.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1622324760
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1622324760.dir/link.txt --verbose=1
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=hwloc_topology_init    CMakeFiles/cmTryCompileExec1622324760.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1622324760  -L/usr/local/lib -rdynamic -lhwloc -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory '/home/nico/stage/runtime-build/CMakeFiles/CMakeTmp'
+
+

@@ -24,26 +24,18 @@ int main( int argc, char** argv) {
 	float t7[N];
 	float t8[N];
 
-	for (int i = 0; i<N; i++)
+	for (int i = 0; i<N; i++){
 		t1[i]= 3*i + 2.0;
 
-	for (int i=0; i <N; i++)
 		t2[i]= i*i + 7.0;
 
-	for (int i = 0; i<N; i++)
 		t4[i]= 3*i + 2.0;
-	for (int i = 0; i<N; i++)
 		t3[i]= 3*i + 2.0;
-	for (int i = 0; i<N; i++)
 		t5[i]= 3*i + 2.0;
-	for (int i = 0; i<N; i++)
 		t6[i]= -3*i + 2.0;
-	for (int i = 0; i<N; i++)
 		t7[i]= 3*i - 2.0;
-	for (int i = 0; i<N; i++)
 		t8[i]= 3.5*i + 2.0;
-	int t=0;
-	int q=0;
+	}
 	struct timespec start, finish;
 	clock_gettime(CLOCK_REALTIME, &start);
 	double sectime;
@@ -57,7 +49,6 @@ int main( int argc, char** argv) {
 #pragma omp task 
 			{
 
-				int r = t;
 				for(int i=0;i<K;i++)
 				{
 					t1[i%N]+= 3.0;
