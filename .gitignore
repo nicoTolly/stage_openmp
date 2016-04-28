@@ -5,6 +5,8 @@
 llvm/
 build/
 
+runtime-build/
+
 #kastors
 kastors-1.1/
 
