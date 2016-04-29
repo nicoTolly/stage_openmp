@@ -654,6 +654,65 @@ en début d'une région parallèle ( mais aussi à la fin )
 
 
 Il est possible de compiler libomp de manière à utiliser hwloc plutôt
-que leurs built-in fonctions qui ont l'air assez compliquée. 
+ue leurs built-in fonctions qui ont l'air assez compliquée. 
 Peut-être envisager de recompiler ma version si cela peut rendre les
 choses plus simples.
+
+#28/04
+
+les fonctions liées à la gestion des tâches sont dans kmp_tasking.cpp
+( sans déconner... ) 
+
+dans les points d'entrée pour le tasking, on a kmpc_omp_task_alloc,
+kmpc_single, kmpc_omp_task, kmpc_omp_taskwait et kmpc_end_single, 
+avec d'autres sans doute.
+
+kmpc_fork_call est appelé avec 8 pour valeur de gtid (je ne sais pas
+trop pourquoi )
+
+intéressant : à chaque appel de task_alloc est passé en argument la 
+taille des données privées de la tâche, ainsi que la taille des données
+partagées. Peut-être un truc à exploiter ici.
+
+
+Idchire a les tailles de caches suivantes :
+
+L1d et i : 32K
+L2 : 256K
+L3 : 20480K
+
+Avec un tableau de float (32 bits ou 4 octets ) on est censé dépasser la
+taille du cache pour une taille de 8192 éléments
+
+Retour aux affinités :
+
+la variable KMP_AFFINITY permet d'épingler les threads aux processeurs.
+compact met les threads aussi près que possible les uns des autres
+scatter au contraire les éloigne autant que possible
+balanced est censé faire un truc équilibré.
+
+affinity balanced n'est pas dispo sur idchire
+L'option n'est pas disponible dans le cas où il y a plusieurs packages.
+
+KMP_AFFINITY="explicit; proclist=[0,7]" OMP_NUM_THREADS=2 ./task-test2
+
+Ligne de commande pour épingler deux threads sur deux processeurs 
+différents. Si on veut avoir deux sockets différentes, on peut faire
+par exemple proclist=[0,8]
+
+Les temps de calculs varie, tout en restant du même ordre de grandeur,
+parfois du simple au double pour task-test2
+
+Les deux tâches définies dans ce programme font chacune accès à la 
+même variable partagée et écrivent dedans.
+
+#29/04
+
+L'équivalent de KMP_AFFINITY pour gcc est GOMP_CPU_AFFINITY
+
+utilisation : GOMP_AFFINITY="0 4" pour lier les deux premiers
+threads aux processeurs 0 et 4.
+
+Problème : impossible de vérifier que l'effet escompté a bien
+eu lieu ( pas de verbose )
+
