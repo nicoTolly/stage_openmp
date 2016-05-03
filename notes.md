@@ -716,3 +716,176 @@ threads aux processeurs 0 et 4.
 Problème : impossible de vérifier que l'effet escompté a bien
 eu lieu ( pas de verbose )
 
+La question de la journée:
+
+Créé un programme openmp simple avec deux tâches partageant
+un tableau et faisant des accès en lecture/écriture à ce tableau.
+
+Testé ensuite le programme dans deux configurations ; une où les 
+deux threads tournent sur deux processeurs du même noeud et une
+où il tourne sur deux processeurs de deux noeuds différents.
+
+Je m'attendais au départ à ce que l'écart de performance entre
+les deux versions soient de plus en plus grand avec l'augmentation
+de la taille du tableau.
+
+En fait, le résultat est très différent :
+
+On s'aperçoit que la performance varie énormément pour des valeurs
+très petites de N (50 par exemple) mais s'estompe pour des valeurs
+plus grandes. 
+
+De plus, la performance est même bien meilleure pour des résultats
+plus grands.
+
+Les observations sont les mêmes avec gcc et clang qualitativement,
+quand bien même gcc est beaucoup plus performant. On peut noter
+aussi qu'avec gcc les différences deviennent rapidement 
+inexistantes.
+
+Deuxième test :
+
+On regarde la valeur que prend t[0] à la fin.
+Du fait de l'absence de synchronisation, le résultat est
+censé être indéfini (rien ne règle les accès)
+
+Peut-être intéressant de regarder ce qu'il se passe avec un code
+optimisé.
+
+#02/05
+
+Par rapport aux accès à t[0]:
+
+La valeur est très instable pour des valeurs de N petites, elle
+devient stable quand N devient grand (=2.0).
+En fait, c'est logique, pour un N plus grand t1[0] est beaucoup
+moins incrémenté.
+
+Nota bene : 
+
+2.0 est la valeur attendue pour une exécution séquentielle.
+On en déduit que dans ce cas on a pas eu de race condition.
+
+Dans le cas N=50000, le programme est stable quand il est
+maintenu sur un même noeud et plutôt instable sinon.
+
+Donc la localité a un impact sur la stabilité du programme.
+
+Preuve est faite, en tout cas, que les écritures en mémoire
+sont faites régulièrement et pas en une seule fois à la fin.
+
+for i in {1..40}; do KMP_AFFINITY="explicit, proclist=[0,8]" OMP_NUM_THREADS=2 perf stat -e cache-references -e cache-misses ./task-test2 2>&1  | grep cache | python getNumber.py >> result/clang/cache-misses-50.txt; done
+
+Mesure de performances par rapport aux caches :
+
+Les caches misses augmentent de plusieurs ordres de grandeurs
+quand on passe du programme exécuté localement au programme
+exécuté sur deux noeuds différents.
+
+fait un script pour récupérer les valeurs de cache misses, les
+pourcentages, les moyennes et les écart-types.
+
+Les optimisations font réapparaître les différences de performance
+entre le programme exécuté localement et sur deux coeurs distants.
+
+Comment est maintenu la cohérence entre le cache et la mémoire ?
+
+Juste refait le programme avec cette fois les variables en
+private. Cette fois, très peu de cache misses dans les deux
+cas, comme attendu.
+
+#03/05
+
+Refait les tests de cache-misses avec le programme compilé cette
+fois avec gcc. Les résultats se confirment.
+
+Truc marrant : GOMP_CPU_AFFINITY semble marcher avec un programme
+compilé avec clang.
+
+pas de différence apparente entre le programme exécuté sur les
+coeurs 0 et 1 ou les coeurs 0 et 7 (apparemment pas de partage
+de cache L1 ou L2)
+
+Compatibilité GOMP_CPU_AFFINITY définie dans kmp_settings.c
+
+Le compte des cycles CPU est en relative cohérence avec le
+timer. Donc pas de problème de timer mal ajusté, ou mesurant
+le mauvais événement.
+
+
+Des infos cools chez François et Philippe:
+
+Pour eux, la différence de performance est significative.
+À plus de 15%, on peut commencer à s'inquiéter sérieusement.
+Donc le travail est intéressant.
+
+D'autre part, pour voir l'architecture de la machine:
+charger le module hwloc (module add hwloc)
+puis faire lstopo
+
+Si on a ouvert la connexion ssh en mode X
+ssh -X ntollena@idchire.imag.fr
+
+On a une interface graphique, ce qui est bon.
+
+
+Les coeurs ne partagent QUE le cache L3 entre eux. Les caches
+L2 et L1 sont individuels.
+
+Pas d'idée particulière sur le pourquoi de la performance qui
+croit avec la taille du tableau.
+
+Peut-être quelque chose à tenter avec la bibliothèque atomic ?
+À voir.
+
+Il est bon de noter que la stratégie de base de libomp est
+"scatter", donc potentiellement nuisible en cas de variables
+partagées.
+
+Peut-être qu'une simple stratégie consistant à adopter "compact"
+en voyant des variables partagées pourraient améliorer la 
+performance - c'est sans doute ce que fait déjà Philippe.
+
+Reste à voir pour les vols de tâches.
+
+OMP_PLACES remplace avantageusement KMP_AFFINITY et 
+GOMP_CPU_AFFINITY
+
+In practice, you can assume that int is atomic. You can also assume that pointer types are atomic; that is very convenient. Both of these assumptions are true on all of the machines that the GNU C Library supports and on all POSIX systems we know of. 
+
+Tiré de la documentation de glibc. Donc les standards du C n'impose
+aucune règle sur l'atomicité, mais en pratique n'importe quel
+système POSIX l'implémente.
+
+Pour les opérations atomiques :
+impossible de réaliser des opérations arithmétiques atomiques
+de base sur les flottants ( le manque de support hardware
+rendrait l'implémentation trop inefficace )
+
+Donc il faut réaliser les tests avec des entiers si l'on veut
+avoir des résultats.
+
+La ligne de compilation pour les std::atomic :
+g++ -Wall -fopenmp -O1 -std=c++11 -o task-atomic task-atomic.cpp mytimer.c -lrt
+
+Depuis le site de Redhat:
+
+Une métrique pertinente pour mesurer l'utilisation du cache est
+le rapport des caches-misses sur le nombre d'instructions.
+
+Dans notre cas, ce rapport est dans les deux configurations très
+bon, quand bien même il est moins bon sur deux noeuds différents.
+
+Une autre métrique utile est le nombre d'instructions par cycle.
+Dans le cas N=50, ce rapport tombe à 1,01 pour une application
+localisée, contre 0,21 pour l'application "étendue" (besoin d'un
+meilleur terme). C'est sans doute là qu'il faut chercher la raison
+de la perte de performance.
+
+En fait, le nombre d'instructions explose avec la réduction de la
+taille du tableau. Moins d'un million d'instructions pour le
+programme au tableau de 5 millions, contre 3 milliards pour
+le programme à 50.
+
+Il ne semble pas y avoir d'instructions supplémentaires exécutées
+entre les deux configurations (compact et scatter)

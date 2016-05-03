@@ -30,3 +30,6 @@ la doc de la llvm intermediate representation
 
 http://reviews.llvm.org/D13991
 le commit lié à l'utilisation de hwloc
+
+http://developerblog.redhat.com/2014/03/10/determining-whether-an-application-has-poor-cache-performance-2/
+site expliquant comment evaluer la performance avec perf
